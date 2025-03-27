@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Receitas</title>
+</head>
+<body>
+    <header>
+        <h1>RECEITAS</h1>
+    </header>
+    <main>
+        <!-- Barra de pesquisa -->
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Digite o nome da receita">
+            <button id="search-button">Buscar</button>
+            <button id="random-button">Receita Aleatória</button>
+        </section>
+
+        <!-- Resultados da pesquisa -->
+        <section id="search-results">
+            <!-- As receitas encontradas serão exibidas aqui -->
+        </section>
+
+        <!-- Categorias -->
+        <section class="categories">
+            <h2>Selecione uma Categoria:</h2>
+            <ul>
+                <li><button class="category-btn" data-category="doce">DOCES</button></li>
+                <li><button class="category-btn" data-category="salgado">SALGADAS</button></li>
+                <li><button class="category-btn" data-category="agridoce">AGRIDOCE</button></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Modal para exibir as imagens das receitas -->
+    <div id="category-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-category-title"></h2>
+            <div id="modal-recipe-images" class="recipe-images">
+                <!-- As imagens das receitas serão carregadas aqui dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para exibir os detalhes da receita -->
+    <div id="recipe-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="recipe-details">
+                <!-- Detalhes da receita serão carregados aqui dinamicamente -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
